@@ -1,11 +1,10 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 // import './pdf.css'
-import Pdf from './pdf';
 
 //PDFjs worker from an external cdn 
 const url =
-    "file:///C:/Users/nbmc1/Downloads/Normaresumepdf.pdf"
+    "https://github.com/nbmc1991/NCportfolio/blob/main/public/images/Normaresumepdf.pdf"
 
 export default function Test() {
 
@@ -31,4 +30,3 @@ export default function Test() {
         </>
     );
 }
-
