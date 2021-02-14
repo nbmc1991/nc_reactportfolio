@@ -9,9 +9,18 @@ class Projects extends Component {
     toggleCategories() {
         if (this.state.activeTab === 0) {
             return (
-                <div>
-                    <h1>hello world</h1>
-                </div>
+                <Card shadow={5} style={{minWidth:'450', margin: 'auto'}}>
+                    <CardTitle style={{color: '#ffff', height:'176px', background: 'url(https://github.com/nbmc1991/reactive-employees/raw/master/public/demoshot.png) center /cover'}}>   </CardTitle>
+                    <CardText>
+Reactive employees Lorem ipsummm la lalalalaalal hahppy                        
+                    </CardText>
+                    <CardActions border>
+                        <Button href="https://github.com/nbmc1991/reactive-employees" colored> Github</Button>
+                    </CardActions>
+                    <CardMenu style={{color: '#fff'}}>
+                        <IconButton name='share' />
+                    </CardMenu>
+                </Card>
             )
         } else if (this.state.activeTab === 1) {
             return (
@@ -23,7 +32,18 @@ class Projects extends Component {
             )
         } else if (this.state.activeTab === 3) {
             return (
-                <div><h1>MongoDb project goes here</h1></div>
+                <Card shadow={5} style={{minWidth:'450', margin: 'auto'}}>
+                <CardTitle style={{color: '#ffff', height:'176px', background: 'url(https://github.com/nbmc1991/TheWorkoutTracker/raw/main/public/images/screenshot2.png) center /cover'}}>   </CardTitle>
+                <CardText>
+Reactive employees Lorem ipsummm la lalalalaalal hahppy                        
+                </CardText>
+                <CardActions border>
+                    <Button href="https://github.com/nbmc1991/TheWorkoutTracker" colored> Github</Button>
+                </CardActions>
+                <CardMenu style={{color: '#fff'}}>
+                    <IconButton name='share' />
+                </CardMenu>
+            </Card>
             )
         }
     }
@@ -39,12 +59,12 @@ class Projects extends Component {
                 </Tabs>
 
                 <section className='projects-grid'>
-                    <Grid className='project-grid'>
+                    <Grid className='projects-grid'>
                         <Cell col={12}>
                             <div className='content'>{this.toggleCategories()}</div>
                         </Cell>
                     </Grid>
-                    {this.toggleCategories()}
+              
 
                 </section>
 
