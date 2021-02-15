@@ -12,7 +12,7 @@ class Projects extends Component {
                 <Card shadow={5} style={{minWidth:'450', margin: 'auto'}}>
                     <CardTitle style={{color: '#ffff', height:'176px', background: 'url(https://github.com/nbmc1991/reactive-employees/raw/master/public/demoshot.png) center /cover'}}>   </CardTitle>
                     <CardText>
-Reactive employees Lorem ipsummm la lalalalaalal hahppy                        
+Reactive employees using React                 
                     </CardText>
                     <CardActions border>
                         <Button href="https://github.com/nbmc1991/reactive-employees" colored> Github</Button>
@@ -24,7 +24,18 @@ Reactive employees Lorem ipsummm la lalalalaalal hahppy
             )
         } else if (this.state.activeTab === 1) {
             return (
-                <div><h1>NodeJS</h1></div>
+                <Card shadow={5} style={{minWidth:'450', margin: 'auto'}}>
+                    <CardTitle style={{color: '#ffff', height:'176px', background: 'url(https://github.com/nbmc1991/alwaysBudgetTracking/blob/main/public/icons/icon-512x512.png?raw=true) center /cover'}}>   </CardTitle>
+                    <CardText>
+alwaysBudgetTracking using NodeJS                 
+                    </CardText>
+                    <CardActions border>
+                        <Button href="https://github.com/nbmc1991/reactive-employees" colored> Github</Button>
+                    </CardActions>
+                    <CardMenu style={{color: '#fff'}}>
+                        <IconButton name='share' />
+                    </CardMenu>
+                </Card>
             )
         } else if (this.state.activeTab === 2) {
             return (
@@ -35,7 +46,7 @@ Reactive employees Lorem ipsummm la lalalalaalal hahppy
                 <Card shadow={5} style={{minWidth:'450', margin: 'auto'}}>
                 <CardTitle style={{color: '#ffff', height:'176px', background: 'url(https://github.com/nbmc1991/TheWorkoutTracker/raw/main/public/images/screenshot2.png) center /cover'}}>   </CardTitle>
                 <CardText>
-Reactive employees Lorem ipsummm la lalalalaalal hahppy                        
+TheWorkoutTracker using MongoDb                        
                 </CardText>
                 <CardActions border>
                     <Button href="https://github.com/nbmc1991/TheWorkoutTracker" colored> Github</Button>
@@ -44,6 +55,7 @@ Reactive employees Lorem ipsummm la lalalalaalal hahppy
                     <IconButton name='share' />
                 </CardMenu>
             </Card>
+            
             )
         }
     }
